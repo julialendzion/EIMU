@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/fgh5mjz.css");
+
+html {
+  font-size: 1em;
+  font-family: "myriad-pro", sans-serif;
+}
+:root {
+  --color-1: #333333;
+  --color-2: #618084;
+  --color-3: #fc9226;
+  --color-4: white;
+  --font-1: "myriad-pro", sans-serif;
+  --font-2: "myriad-pro-semiextended", sans-serif;
+}

@@ -1,0 +1,38 @@
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    gap: 5em;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+  button {
+    height: 5em;
+  }
+  #logo {
+    width: 60%;
+  }
+
+  button {
+    background-color: var(--color-2);
+    border-style: none;
+    border-radius: 20vw;
+    width: 8vw;
+    height: 2vw;
+  }
+  nav div {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
