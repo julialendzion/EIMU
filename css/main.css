@@ -17,7 +17,8 @@
   h2 {
     color: var(--color-2);
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    padding-top: 4vw;
   }
 
   #img {
@@ -38,5 +39,68 @@
     text-align: center;
     font-weight: 200;
     font-size: 1.5vw;
+  }
+
+  #icons {
+    background-color: var(--color-2);
+  }
+  #icons h2 {
+    color: var(--color-4);
+    padding-top: 12vw;
+    font-size: 3vw;
+  }
+  #svgs {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-bottom: 12vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #svgs p {
+    color: var(--color-4);
+    font-weight: 100;
+    font-family: var(--font-2);
+  }
+
+  #info {
+    padding-top: 10vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .grid h2 {
+    text-align: left;
+    color: var(--color-3);
+    font-size: 3vw;
+  }
+
+  #info img {
+    margin-left: -10vw;
+    width: 100%;
+  }
+
+  #recipes {
+    padding-top: 10vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .grid p {
+    color: var(--color-1);
+    font-weight: 100;
+    font-family: var(--font-2);
+  }
+
+  .grid ul {
+    padding: 0;
+    display: inline;
+    line-height: 3vw;
+    font-weight: 100;
+    font-family: var(--font-2);
+  }
+
+  #recipes img {
+    width: 95%;
+    margin-top: -6vw;
   }
 }
