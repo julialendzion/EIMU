@@ -1,38 +1,42 @@
 @media screen and (min-width: 700px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  ul {
-    display: flex;
-    gap: 5em;
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-  button {
-    height: 5em;
-  }
-  #logo {
-    width: 60%;
-  }
-
-  button {
+  header {
+    background-image: url(../img/eimumockupbetterq.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-color: var(--color-2);
-    border-style: none;
-    border-radius: 20vw;
-    width: 8vw;
-    height: 2vw;
   }
-  nav div {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
+
+  header h1 {
+    color: var(--color-4);
+    font-size: 3vw;
+    width: 30vw;
+    margin-left: 60%;
+    margin-top: 29%;
+  }
+  h2 {
+    color: var(--color-2);
+    text-align: center;
+    font-size: 2.5vw;
+  }
+
+  #img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+  }
+  #drinks {
+    justify-content: center;
+    margin-top: -2vw;
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5vw;
   }
 }
