@@ -6,7 +6,9 @@
     background-repeat: no-repeat;
     background-color: var(--color-2);
   }
-
+  #language {
+    color: var(--color-4);
+  }
   header h1 {
     color: var(--color-4);
     font-size: 3vw;
@@ -89,8 +91,12 @@
     padding-top: 10vw;
     display: grid;
     grid-template-columns: 60% 40%;
+    padding-left: 7vw;
   }
-
+  #recipes p,
+  h2 {
+    width: 45vw;
+  }
   .grid p {
     color: var(--color-1);
     font-weight: 100;

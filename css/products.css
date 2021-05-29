@@ -1,0 +1,10 @@
+@media screen and (min-width: 700px) {
+  img {
+    max-width: 100%;
+  }
+  main {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -30,7 +30,7 @@ function product(data) {
   //adjust stuff
   copy.querySelector("h3").textContent = data.name;
   copy.querySelector("#img").src = data.image;
-  copy.querySelector("a").href = `product.html?id=${data._id}`;
+  copy.querySelector("a").href = `products.html?id=${data._id}`;
   //copy.querySelector("article img").alt = data.productdisplayname;
   // copy.querySelector("h3 span").textContent = post.username;
   // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
