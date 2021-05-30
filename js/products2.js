@@ -29,7 +29,6 @@ function showPost(data) {
   document.querySelector("#img").src = data.image;
   document.querySelector(".name").textContent = data.name + data.ml;
   document.querySelector(".name").style.color = data.color;
-
   document.querySelector(".description").textContent = data.description;
   document.querySelector("#produkt").style.backgroundImage =
     `url(` + data.background + `)`;
@@ -40,6 +39,15 @@ function showPost(data) {
 
   document.querySelector("#clickhere").onclick = () => {
     LocationOpen();
+    document.querySelector("#clickhere2").onclick = () => {
+      IngredientsOpen();
+    };
+    document.querySelector("#clickhere3").onclick = () => {
+      AllergenesOpen();
+    };
+    document.querySelector("#clickhere4").onclick = () => {
+      NutritionOpen();
+    };
   };
 
   //grab the template
@@ -59,7 +67,7 @@ function showPost(data) {
     const copy = template.cloneNode(true);
 
     copy.querySelector("h3").textContent = "No comments yet, be the first!";
-    copy.querySelector("p span").textContent = "you";
+    copy.querySelector("p span").textContent = "-";
 
     document.querySelector("#commentDisplay").appendChild(copy);
   }
@@ -97,4 +105,19 @@ function handleSubmit(e) {
       form.elements.name.value = "";
       form.elements.content.value = "";
     });
+}
+function LocationOpen() {
+  document.querySelector("#location").classList.toggle("hidden");
+}
+
+function IngredientsOpen() {
+  document.querySelector("#ingredients").classList.toggle("hidden");
+}
+
+function AllergenesOpen() {
+  document.querySelector("#allergenes").classList.toggle("hidden");
+}
+
+function NutritionOpen() {
+  document.querySelector("#nutrition").classList.toggle("hidden");
 }
