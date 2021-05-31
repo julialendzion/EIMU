@@ -107,18 +107,42 @@ function handleSubmit(e) {
 }
 function LocationOpen() {
   document.querySelector("#location").classList.toggle("hidden");
+  var x = document.getElementById("clickhere");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function IngredientsOpen() {
   document.querySelector("#ingredients").classList.toggle("hidden");
+  var x = document.getElementById("clickhere2");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function AllergenesOpen() {
   document.querySelector("#allergenes").classList.toggle("hidden");
+  var x = document.getElementById("clickhere3");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function NutritionOpen() {
   document.querySelector("#nutrition").classList.toggle("hidden");
+  var x = document.getElementById("clickhere4");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 const url = "https://kea21-6a0c.restdb.io/rest/eimu-products";
