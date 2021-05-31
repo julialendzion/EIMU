@@ -25,7 +25,7 @@
     margin-top: auto;
     margin-bottom: auto;
     display: block;
-    height: 90vh;
+    height: 100%;
   }
   #arrow:hover {
     cursor: pointer;
@@ -39,7 +39,7 @@
     margin-top: auto;
     margin-bottom: auto;
     display: block;
-    height: 90vh;
+    height: 100%;
   }
 
   #arrow2:hover {
@@ -79,12 +79,75 @@
 
   .line {
     margin-top: -0.5vw;
-    width: 100%;
   }
+
   #detailsSvgs p {
     margin-top: -0.6vw;
     font-size: 1.1vw;
     font-weight: 200;
     padding-bottom: 0.6vw;
+  }
+  /* COMMENTS STYLING!!!*/
+  #comments {
+    background-color: var(--color-5);
+    padding: 8vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+    color: var(--color-3);
+    font-weight: 600;
+  }
+  /* COOKING SECTION */
+  #cooking {
+    padding: 8vw;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    column-gap: 10%;
+  }
+
+  #cooking img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #text {
+    padding-top: 6vw;
+  }
+
+  #cooking a {
+    text-decoration: underline;
+    font-size: 1.2vw;
+  }
+
+  /*list of products*/
+  #ListOfDrinks {
+    background-color: var(--color-5);
+  }
+  #drinks {
+    justify-content: center;
+    margin-top: -2vw;
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  #find {
+    color: var(--color-2);
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 4vw;
+  }
+  #drinks h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5vw;
+  }
+
+  #drinks #img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
   }
 }

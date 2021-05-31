@@ -8,11 +8,15 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  color: var(--color-1);
+}
 :root {
   --color-1: #333333;
   --color-2: #618084;
   --color-3: #fc9226;
   --color-4: white;
+  --color-5: #f7f7f7;
   --font-1: "myriad-pro", sans-serif;
   --font-2: "myriad-pro-semiextended", sans-serif;
 }
@@ -86,5 +90,10 @@ body {
   }
   #language:hover {
     cursor: pointer;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: var(--color-2);
   }
 }

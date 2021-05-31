@@ -95,8 +95,10 @@
     grid-template-columns: 60% 40%;
     padding-left: 7vw;
   }
-  #recipes p,
-  h2 {
+  #recipes p {
+    width: 45vw;
+  }
+  #recipes h2 {
     width: 45vw;
   }
   .grid p {

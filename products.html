@@ -68,11 +68,15 @@
             <img class="line" src="img/line.svg" />
           </div>
         </section>
-        <section><img id="arrow2" src="img/arrow2.svg" /></section>
+        <section>
+          <a id="arrow2click" href="products.html?id=60afe8c26a5d621100000f89"
+            ><img id="arrow2" src="img/arrow2.svg"
+          /></a>
+        </section>
       </section>
 
       <section id="Comments">
-        <h2>Comments:</h2>
+        <h2>Reviews from our customers</h2>
         <template class="comments">
           <div id="comment">
             <p>by <span></span></p>
@@ -92,9 +96,38 @@
             id="comment_content"
             required
           ></textarea>
-
           <input id="button" type="submit" value="Add a comment" />
         </form>
+      </section>
+
+      <section id="cooking">
+        <div id="text">
+          <h2>Need some cooking inspiration?</h2>
+          <p>
+            Our drinks are made not only for drinking or adding them to your
+            coffee- there’s so much more! They’re perfect for cooking & baking.
+          </p>
+          <p>They’re perfect for cooking & baking.</p>
+          <a href="recipes.html">See more</a>
+        </div>
+        <img src="img/ladydrinkingmilk.png" />
+      </section>
+
+      <section id="ListOfDrinks">
+        <h2 id="find">Find your favourite</h2>
+
+        <section id="drinks"></section>
+        <template id="template">
+          <article>
+            <a href=""
+              ><img
+                id="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
+                alt=""
+            /></a>
+            <h3>NAME</h3>
+          </article>
+        </template>
       </section>
     </main>
     <footer></footer>
