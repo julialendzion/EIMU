@@ -21,7 +21,7 @@
           <div>
             <a href="wheretobuy.html"> <button>Where to buy</button></a>
           </div>
-          <a id="language">ES/ENG</a>
+          <a href="ES/index.html" id="language">ES/ENG</a>
         </div>
       </nav>
       <h1>Estonia’s first locally produced plant-based drink</h1>
@@ -101,11 +101,33 @@
     <footer>
       <section>
         <ul>
-          <li><a></a></li>
-          <li><a></a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="careers.html">CAREERS</a></li>
         </ul>
+        <div id="soMe">
+          <div><img src="img/facebook.svg" /></div>
+          <div><img src="img/ig.svg" /></div>
+          <div><img src="img/linkedin.svg" /></div>
+        </div>
       </section>
-      <section id="newsletter"></section>
+      <section id="newsletter">
+        <form id="NewsletterForm">
+          <label for="newsletter_email"
+            >Sign up for the newsletter and always be up to date!</label
+          >
+          <input
+            type="text"
+            name="email"
+            required
+            id="newsletter_email"
+            placeholder="Email..."
+          />
+          <input id="button" type="submit" value="SUBSCRIBE" />
+        </form>
+        <p id="copyrights">© 2021 EIMU</p>
+      </section>
     </footer>
     <script src="js/index.js"></script>
   </body>

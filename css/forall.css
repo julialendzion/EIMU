@@ -95,5 +95,90 @@ p {
   /*FOOTER*/
   footer {
     background-color: var(--color-2);
+    padding: 4vw 3vw 1vw 3vw;
+    display: grid;
+    grid-template-columns: 30% 40%;
+    column-gap: 30%;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  footer a {
+    color: var(--color-5);
+    font-family: var(--font-2);
+    font-weight: 200;
+  }
+  footer form {
+    padding: 2vw;
+  }
+  footer label {
+    display: block;
+    color: var(--color-4);
+    font-family: var(--font-2);
+    font-weight: 200;
+    font-size: 1.3vw;
+  }
+
+  footer input {
+    display: inline;
+  }
+
+  footer #button {
+    color: white;
+    background-color: #526c6f;
+    border-style: solid;
+    border-color: var(--color-4);
+    -webkit-box-shadow: 3px 3px 0px 0px white;
+    box-shadow: 3px 3px 0px 0px white;
+    border-radius: 20vw;
+    width: 10vw;
+    height: 2.5vw;
+    margin-top: 1vw;
+    font-size: 0.9vw;
+    font-weight: 200;
+    letter-spacing: 0.1vw;
+  }
+  footer #button:hover {
+    color: white;
+    background-color: #526c6f;
+    border-style: solid;
+    border-color: var(--color-4);
+    -webkit-box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px white;
+    border-radius: 20vw;
+    width: 10vw;
+    height: 2.5vw;
+    margin-top: 1vw;
+    font-size: 0.9vw;
+    font-weight: 200;
+    transform: translate(3px, 3px);
+    cursor: pointer;
+    letter-spacing: 0.1vw;
+  }
+  #newsletter_email {
+    font-size: 1.3vw;
+    color: white;
+    background-color: var(--color-2);
+    margin-right: 1vw;
+    border-bottom: 2px solid white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  #soMe {
+    display: flex;
+    gap: 1.5vw;
+    padding-left: 2.7vw;
+    padding-top: 1vw;
+  }
+  #copyrights {
+    color: var(--color-1);
+    text-align: right;
+    padding-top: 4vw;
+    padding-bottom: 0;
+    font-size: 1.2vw;
   }
 }
