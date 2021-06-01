@@ -68,7 +68,7 @@
   #svgs p {
     color: var(--color-4);
     font-weight: 100;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
     text-align: center;
   }
 
@@ -77,6 +77,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
   }
+
   .grid h2 {
     text-align: left;
     color: var(--color-3);
@@ -101,10 +102,16 @@
   #recipes h2 {
     width: 45vw;
   }
+
+  #recipes a {
+    text-decoration: underline;
+    font-size: 1.2vw;
+  }
   .grid p {
     color: var(--color-1);
     font-weight: 100;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
+    width: 45vw;
   }
 
   .grid ul {
@@ -112,7 +119,7 @@
     display: inline;
     line-height: 3vw;
     font-weight: 100;
-    font-family: var(--font-2);
+    font-family: var(--font-3);
   }
 
   #recipes img {
