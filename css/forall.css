@@ -95,6 +95,7 @@ p {
   }
 
   /*FOOTER*/
+
   footer {
     background-color: var(--color-2);
     padding: 4vw 3vw 1vw 3vw;
@@ -183,5 +184,14 @@ p {
     padding-top: 4vw;
     padding-bottom: 0;
     font-size: 1.2vw;
+  }
+  .hidden {
+    display: none;
+  }
+  #confirmation {
+    color: var(--color-3);
+    font-size: 1.2vw;
+    padding-left: 0.6vw;
+    font-family: var(--font-3);
   }
 }

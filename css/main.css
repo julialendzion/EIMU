@@ -5,6 +5,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
+  body {
+    overflow-x: hidden;
+  }
 
   /**/
   #language {
@@ -125,5 +128,6 @@
   #recipes img {
     width: 95%;
     margin-top: -6vw;
+    margin-left: 5vw;
   }
 }
