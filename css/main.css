@@ -1,133 +1,176 @@
-@media screen and (min-width: 700px) {
-  header {
-    background-image: url(../img/eimumockupbetterq.jpg);
-    height: 100vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  body {
-    overflow-x: hidden;
-  }
+header {
+  background-image: url(../img/eimumockupbetterq.jpg);
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body {
+  overflow-x: hidden;
+}
 
-  /**/
-  #language {
-    color: var(--color-4);
+/**/
+#language {
+  color: var(--color-4);
+}
+header h1 {
+  color: var(--color-4);
+  font-size: 3vw;
+  width: 30vw;
+  margin-left: 60%;
+  margin-top: 29%;
+}
+h2 {
+  color: var(--color-2);
+  text-align: center;
+  font-size: 2vw;
+  padding-top: 4vw;
+}
+
+#img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+}
+#drinks {
+  justify-content: center;
+  margin-top: -2vw;
+  padding: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5vw;
+}
+
+#icons {
+  background-color: var(--color-2);
+}
+#icons h2 {
+  color: var(--color-4);
+  padding-top: 12vw;
+  font-size: 3vw;
+}
+#svgs {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 12vw;
+  display: flex;
+  justify-content: space-around;
+}
+#svgs img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#svgs p {
+  color: var(--color-4);
+  font-weight: 100;
+  font-family: var(--font-3);
+  text-align: center;
+}
+
+#info {
+  padding-top: 10vw;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.grid h2 {
+  text-align: left;
+  color: var(--color-3);
+  font-size: 3vw;
+}
+
+#info img {
+  margin-left: -10vw;
+  width: 100%;
+}
+
+#recipes {
+  padding-top: 10vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-left: 7vw;
+  padding-bottom: 10vw;
+}
+#recipes p {
+  width: 45vw;
+}
+#recipes h2 {
+  width: 45vw;
+}
+
+#recipes a {
+  text-decoration: underline;
+  font-size: 1.2vw;
+}
+.grid p {
+  color: var(--color-1);
+  font-weight: 100;
+  font-family: var(--font-3);
+  width: 45vw;
+}
+
+.grid ul {
+  padding: 0;
+  display: inline;
+  line-height: 3vw;
+  font-weight: 100;
+  font-family: var(--font-3);
+}
+
+#recipes img {
+  width: 95%;
+  margin-top: -6vw;
+  margin-left: 5vw;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    background-image: url(../img/mobile_background.png);
   }
   header h1 {
-    color: var(--color-4);
-    font-size: 3vw;
-    width: 30vw;
-    margin-left: 60%;
-    margin-top: 29%;
-  }
-  h2 {
-    color: var(--color-2);
-    text-align: center;
-    font-size: 2vw;
-    padding-top: 4vw;
+    margin-top: 70vw;
+    margin-left: 50vw;
+    font-size: 8vw;
+    width: 48vw;
   }
 
-  #img {
-    display: block;
-    width: 90%;
-    margin-left: auto;
-  }
   #drinks {
-    justify-content: center;
-    margin-top: -2vw;
-    padding: 3vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 60% 60% 0%;
+    gap: 0;
+    margin: 0;
   }
-
-  h3 {
-    text-align: center;
-    font-weight: 200;
-    font-size: 1.5vw;
-  }
-
-  #icons {
-    background-color: var(--color-2);
-  }
-  #icons h2 {
-    color: var(--color-4);
-    padding-top: 12vw;
+  #drinks h3 {
     font-size: 3vw;
   }
   #svgs {
-    padding-left: 8vw;
-    padding-right: 8vw;
-    padding-bottom: 12vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+  }
+  #icons {
+    padding-top: 2vw;
+    padding-bottom: 14vw;
+  }
+  #icons h2 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 5vw;
   }
   #svgs img {
-    width: 70%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   #svgs p {
-    color: var(--color-4);
-    font-weight: 100;
-    font-family: var(--font-3);
-    text-align: center;
-  }
-
-  #info {
-    padding-top: 10vw;
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-
-  .grid h2 {
-    text-align: left;
-    color: var(--color-3);
-    font-size: 3vw;
-  }
-
-  #info img {
-    margin-left: -10vw;
-    width: 100%;
-  }
-
-  #recipes {
-    padding-top: 10vw;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding-left: 7vw;
-    padding-bottom: 10vw;
-  }
-  #recipes p {
-    width: 45vw;
-  }
-  #recipes h2 {
-    width: 45vw;
-  }
-
-  #recipes a {
-    text-decoration: underline;
-    font-size: 1.2vw;
-  }
-  .grid p {
-    color: var(--color-1);
-    font-weight: 100;
-    font-family: var(--font-3);
-    width: 45vw;
-  }
-
-  .grid ul {
-    padding: 0;
-    display: inline;
-    line-height: 3vw;
-    font-weight: 100;
-    font-family: var(--font-3);
-  }
-
-  #recipes img {
-    width: 95%;
-    margin-top: -6vw;
-    margin-left: 5vw;
+    font-size: 2vw;
   }
 }
