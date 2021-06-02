@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/forall.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <a href="index.html"> <img id="logo" src="img/Artboard 2.svg" /></a>
+
+        <div>
+          <div>
+            <a href="wheretobuy.html"> <button>Where to buy</button></a>
+          </div>
+          <a href="ES/index.html" id="language">ES/ENG</a>
+        </div>
+      </nav>
+      <h1>Estonia’s first locally produced plant-based drink</h1>
+    </header>
+    <main>
+      <h2>Find your favourite</h2>
+
+      <section id="drinks"></section>
+      <template id="template">
+        <article>
+          <a href=""
+            ><img
+              id="img"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
+              alt=""
+          /></a>
+          <h3>NAME</h3>
+        </article>
+      </template>
+      <section id="icons">
+        <h2>Enjoy your drink without worrying</h2>
+        <div id="svgs">
+          <div>
+            <img src="img/vegan.svg" />
+            <p>vegan</p>
+          </div>
+          <div>
+            <img src="img/lactose.svg" />
+            <p>lactose free</p>
+          </div>
+          <div>
+            <img src="img/nut.svg" />
+            <p>nut free</p>
+          </div>
+          <div>
+            <img src="img/soya.svg" />
+            <p>soy free</p>
+          </div>
+          <div>
+            <img src="img/gmo.svg" />
+            <p>GMO free</p>
+          </div>
+          <div>
+            <img src="img/gluten.svg" />
+            <p>gluten free *</p>
+          </div>
+        </div>
+      </section>
+      <section id="info" class="grid">
+        <img src="img/boy.png" />
+        <div>
+          <h2>Let’s keep the Earth healthy too!</h2>
+          <p>
+            If 20 000 friends would switch to EIMU, we could almost save the
+            world:
+          </p>
+          <ul>
+            <li>4 milion kg of CO2 emissions saved</li>
+            <li>kg of CO2 emissions saved</li>
+            <li>kg of CO2 emissions saved</li>
+          </ul>
+        </div>
+      </section>
+      <section id="recipes" class="grid">
+        <div>
+          <h2>Discover a new way of cooking with our products</h2>
+          <p>
+            Our drinks are made not only for drinking or adding them to your
+            coffee- there’s so much more! They’re perfect for cooking & baking.
+            Find your favourite recipe!
+          </p>
+          <a href="recipes">Read more</a>
+        </div>
+        <img src="img/chia.png" />
+      </section>
+    </main>
+    <footer>
+      <section>
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="careers.html">CAREERS</a></li>
+        </ul>
+        <div id="soMe">
+          <div><img src="img/facebook.svg" /></div>
+          <div><img src="img/ig.svg" /></div>
+          <div><img src="img/linkedin.svg" /></div>
+        </div>
+      </section>
+      <section id="newsletter">
+        <form id="NewsletterForm">
+          <label for="newsletter_email"
+            >Sign up for the newsletter and always be up to date!</label
+          >
+          <input
+            type="text"
+            name="email"
+            required
+            id="newsletter_email"
+            placeholder="Email..."
+          />
+          <input id="button" type="submit" value="SUBSCRIBE" />
+        </form>
+        <p id="copyrights">© 2021 EIMU</p>
+      </section>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
