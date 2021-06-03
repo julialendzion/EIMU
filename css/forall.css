@@ -27,6 +27,7 @@ p {
   nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 
   ul {
@@ -82,7 +83,7 @@ p {
   }
 
   #logo {
-    width: 9.5vw;
+    width: 8vw;
     margin-top: 1vw;
   }
 
