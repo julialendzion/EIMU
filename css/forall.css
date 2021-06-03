@@ -23,7 +23,7 @@ p {
   --font-2: "myriad-pro-semiextended", sans-serif;
   --font-3: "Overpass Mono", monospace;
 }
-@media screen and (min-width: 700px) {
+
   /* MENU */
   nav {
     display: flex;
