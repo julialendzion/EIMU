@@ -1,0 +1,7 @@
+.splash {
+  position: relative;
+  height: 50vw;
+  margin-top: -32vw;
+  margin-left: -5vw;
+  transform: rotate(45);
+}

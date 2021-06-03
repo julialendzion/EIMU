@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
 
 html {
-  font-size: 1em;
+  font-size: 14px;
   font-family: "myriad-pro", sans-serif;
 }
 body {
@@ -92,6 +92,22 @@ p {
   }
   #language:hover {
     cursor: pointer;
+  }
+
+  #breadcrumbs {
+    margin-left: 3.5vw;
+    color: #333333;
+    opacity: 0.35;
+  }
+
+  #breadcrumbs a,
+  span {
+    font-family: var(--font-3);
+    font-size: 0.8rem;
+  }
+
+  #breadcrumbs a:hover {
+    text-decoration: underline;
   }
 
   /*FOOTER*/
