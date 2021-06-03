@@ -126,6 +126,22 @@ p {
     cursor: pointer;
   }
 
+  #breadcrumbs {
+    margin-left: 3.5vw;
+    color: #333333;
+    opacity: 0.35;
+  }
+
+  #breadcrumbs a,
+  span {
+    font-family: var(--font-3);
+    font-size: 0.8rem;
+  }
+
+  #breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+
   /*FOOTER*/
 
   footer {
@@ -268,21 +284,12 @@ p {
       max-width: 100%;
     }
 
-    #breadcrumbs {
-      margin-left: 3.5vw;
-      color: #333333;
-      opacity: 0.35;
-    }
-
+  
     #breadcrumbs a,
     span {
-      font-family: var(--font-3);
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
-
-    #breadcrumbs a:hover {
-      text-decoration: underline;
-    }
+  
 
     /*FOOTER*/
     footer {
