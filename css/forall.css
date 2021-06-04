@@ -135,7 +135,7 @@ button:hover {
 #breadcrumbs a,
 span {
   font-family: var(--font-3);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #breadcrumbs a:hover {

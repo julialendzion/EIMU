@@ -6,14 +6,23 @@ main {
   margin-bottom: 20vh;
 }
 
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+#breadcrumbs {
+  position: relative;
+  z-index: 2;
+}
+
 .splash,
 .splash1 {
-  position: relative;
   height: 55vw;
   margin-top: -40vw;
   margin-left: -18vw;
   transform: rotate(-148deg);
-  overflow-x: hidden;
+  z-index: 0;
 }
 
 .splash1 {
