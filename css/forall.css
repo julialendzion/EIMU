@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/fgh5mjz.css");
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
 
+header {
+  margin-top: -10px;
+}
 html {
   font-size: 14px;
   font-family: "myriad-pro", sans-serif;
