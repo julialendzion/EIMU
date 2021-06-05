@@ -1,5 +1,5 @@
 @media screen and (min-width: 700px) {
-  main {
+  .main {
     padding: 6vw 1vw 4vw 3vw;
     display: grid;
     grid-template-columns: 53vw 36vw;
