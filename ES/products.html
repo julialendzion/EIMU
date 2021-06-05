@@ -1,82 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/forall.css" />
-    <link rel="stylesheet" href="css/products.css" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/forall.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="mission.html">Mission</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="index.html#main">Tooted</a></li>
+          <li><a href="mission.html">Missioon</a></li>
+          <li><a href="aboutus.html">Meist</a></li>
         </ul>
-        <a href="index.html"> <img id="logo" src="img/Artboard 2.svg" /></a>
-
-        <div>
-          <div>
-            <a href="wheretobuy.html"> <button>Where to buy</button></a>
-          </div>
-          <a href="ES/products.html" id="language">ES/ENG</a>
+        <div id="div1">
+          <a href="index.html">
+            <img id="logo" src="../img/Artboard 2.svg"
+          /></a>
+          <a href="wheretobuy.html"
+            ><img id="mobile_basket" src="../img/basket.svg"
+          /></a>
+        </div>
+        <div id="div2">
+          <a href="wheretobuy.html"> <button>Kust leida?</button></a>
+          <a href="ES/index.html" id="language">EE/ENG</a>
         </div>
       </nav>
+      <h1></h1>
     </header>
     <main>
       <section id="produkt">
         <section>
-          <img id="arrow" src="img/arrow.svg" />
+          <img id="arrow" src="../img/arrow.svg" />
         </section>
         <section>
           <img id="img" src="" />
         </section>
         <section id="info">
-          <h1 class="name">Nazwa</h1>
+          <h1 class="name">Nimi</h1>
           <p class="description"></p>
 
           <div id="detailsSvgs">
             <div class="clickingArea">
-              <h2>Where is it made?</h2>
+              <h2>Kus see valmistatud on??</h2>
               <h3 id="clickhere">+</h3>
             </div>
-            <p id="location" class="hidden">Produced in Estonia.</p>
+            <p id="location" class="hidden">Valmistatud Eestis, Värskas.</p>
 
-            <img class="line" src="img/line.svg" />
+            <img class="line" src="../img/line.svg" />
 
             <div class="clickingArea">
-              <h2>Ingredients</h2>
+              <h2>Koostisosad</h2>
               <h3 id="clickhere2">+</h3>
             </div>
             <p id="ingredients" class="hidden"></p>
-            <img class="line" src="img/line.svg" />
+            <img class="line" src="../img/line.svg" />
 
             <div class="clickingArea">
-              <h2>Allergenes</h2>
+              <h2>Allergeenid</h2>
               <h3 id="clickhere3">+</h3>
             </div>
             <p id="allergenes" class="hidden"></p>
-            <img class="line" src="img/line.svg" />
+            <img class="line" src="../img/line.svg" />
 
             <div class="clickingArea">
-              <h2>Nutritional Value</h2>
+              <h2>Toiteväärtus</h2>
               <h3 id="clickhere4">+</h3>
             </div>
             <p id="nutrition" class="hidden"></p>
-            <img class="line" src="img/line.svg" />
+            <img class="line" src="../img/line.svg" />
           </div>
         </section>
         <section>
           <a id="arrow2click" href="products.html?id=60afe8c26a5d621100000f89"
-            ><img id="arrow2" src="img/arrow2.svg"
+            ><img id="arrow2" src="../img/arrow2.svg"
           /></a>
         </section>
       </section>
 
       <section id="Comments">
-        <h2>Reviews from our customers</h2>
+        <h2>Vaata, mida meie kliendid meie kohta ütlevad!</h2>
         <template class="comments">
           <div id="comment">
             <p>by <span></span></p>
@@ -102,19 +108,19 @@
 
       <section id="cooking">
         <div id="text">
-          <h2>Need some cooking inspiration?</h2>
+          <h2>Soovid kokkamiseks lisainspiratsiooni?</h2>
           <p>
-            Our drinks are made not only for drinking or adding them to your
-            coffee- there’s so much more! They’re perfect for cooking & baking.
+            Meie joogid pole vaid joomiseks või kohvile lisamiseks - nendes on
+            palju enamat! Need sobivad ideaalselt toidu valmistamiseks ja
+            küpsetamiseks. Leia oma lemmik retsept!
           </p>
-          <p>They’re perfect for cooking & baking.</p>
-          <a href="recipes.html">See more</a>
+          <a href="recipes.html">Loe lähemalt</a>
         </div>
-        <img src="img/ladydrinkingmilk.png" />
+        <img src="../img/ladydrinkingmilk.png" />
       </section>
 
       <section id="ListOfDrinks">
-        <h2 id="find">Find your favourite</h2>
+        <h2 id="find">Leia oma lemmik</h2>
 
         <section id="drinks"></section>
         <template id="template">
@@ -130,7 +136,41 @@
         </template>
       </section>
     </main>
-    <footer></footer>
-    <script src="js/products2.js"></script>
+    <footer>
+      <section>
+        <ul>
+          <li><a href="about.html">Meist</a></li>
+          <li><a href="contactus.html">Kontakt</a></li>
+          <li><a href="team.html">Tiim</a></li>
+          <li><a href="careers.html">Karjäär</a></li>
+        </ul>
+        <div id="soMe">
+          <div><img src="../img/facebook.svg" /></div>
+          <div><img src="../img/ig.svg" /></div>
+          <div><img src="../img/linkedin.svg" /></div>
+        </div>
+      </section>
+      <section id="newsletter">
+        <form id="NewsletterForm">
+          <label for="newsletter_email"
+            >Telli uudiskiri ning ole meie tegemistega kursis!</label
+          >
+          <input
+            type="text"
+            name="email"
+            required
+            id="newsletter_email"
+            placeholder="E-mail..."
+          />
+          <input id="button" type="submit" value="REGISTREERI" />
+        </form>
+        <p id="confirmation" class="hidden">
+          Aitäh, et liitusid ja aitad meil maailma muuta!
+        </p>
+        <p id="copyrights">© 2021 EIMU</p>
+      </section>
+    </footer>
+    <script src="../js/products2.js"></script>
+    <script src="../js/newsletter.js"></script>
   </body>
 </html>
