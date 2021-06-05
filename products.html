@@ -78,25 +78,31 @@
       </section>
 
       <section id="Comments">
-        <h2>Reviews from our customers</h2>
-        <template class="comments">
-          <div id="comment">
-            <p>by <span></span></p>
-            <h3></h3>
-          </div>
-        </template>
-        <section id="commentDisplay"></section>
-
+        <div>
+          <h2>Reviews from our customers</h2>
+          <template class="comments">
+            <div id="comment">
+              <p>by <span></span></p>
+              <h3></h3>
+            </div>
+          </template>
+          <section id="commentDisplay"></section>
+        </div>
         <form id="commentForm">
-          <label for="comment_name">Name</label>
-          <input type="text" name="name" required id="comment_name" />
+          <input
+            type="text"
+            name="name"
+            required
+            id="comment_name"
+            placeholder="Your name..."
+          />
 
-          <label for="comment_content">Comment</label>
           <textarea
             name="content"
             required
             id="comment_content"
             required
+            placeholder="Type your comment here..."
           ></textarea>
           <input id="button" type="submit" value="Add a comment" />
         </form>
@@ -132,7 +138,41 @@
         </template>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <ul>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="careers.html">CAREERS</a></li>
+        </ul>
+        <div id="soMe">
+          <div><img src="img/facebook.svg" /></div>
+          <div><img src="img/ig.svg" /></div>
+          <div><img src="img/linkedin.svg" /></div>
+        </div>
+      </section>
+      <section id="newsletter">
+        <form id="NewsletterForm">
+          <label for="newsletter_email"
+            >Sign up for the newsletter and always be up to date!</label
+          >
+          <input
+            type="text"
+            name="email"
+            required
+            id="newsletter_email"
+            placeholder="Email..."
+          />
+          <input id="button" type="submit" value="SUBSCRIBE" />
+        </form>
+        <p id="confirmation" class="hidden">
+          Thank you for joining and making a difference!
+        </p>
+        <p id="copyrights">© 2021 EIMU</p>
+      </section>
+    </footer>
     <script src="js/products2.js"></script>
+    <script src="js/newsletter.js"></script>
   </body>
 </html>

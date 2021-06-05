@@ -151,4 +151,37 @@
     margin-left: auto;
     margin-right: 1.5vw;
   }
+
+  /*COMMENT STYLING*/
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 2vw;
+    padding: 5vw;
+  }
+
+  #comments #button {
+    color: var(--color-1);
+  }
+  #comments #button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #comments input,
+  textarea {
+    border: none;
+    padding: 1vw;
+  }
+  #comments {
+    display: grid;
+    grid-template-columns: 60% 30%;
+  }
+  #comments h3 {
+    margin-top: -1vw;
+    margin-bottom: 3vw;
+  }
+  #comments h2 {
+    font-size: 2.5vw;
+  }
 }
