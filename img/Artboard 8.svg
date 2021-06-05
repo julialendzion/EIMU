@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="472.52" height="7.78" viewBox="0 0 472.52 7.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="basket">
+    <line class="cls-1" y1="3.89" x2="472.52" y2="3.89"/>
+  </g>
+</svg>
