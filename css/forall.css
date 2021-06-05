@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/fgh5mjz.css");
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap");
 
+header {
+  margin-top: -10px;
+}
 html {
   font-size: 14px;
   font-family: "myriad-pro", sans-serif;
@@ -28,7 +31,7 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* MENU */
@@ -284,8 +287,20 @@ footer #button:hover {
     max-width: 100%;
   }
 
+  #breadcrumbs {
+    margin-left: 3.5vw;
+    color: #333333;
+    opacity: 0.35;
+  }
+
   #breadcrumbs a,
   span {
+    font-family: var(--font-3);
+    font-size: 0.8rem;
+  }
+
+  #breadcrumbs a:hover {
+    text-decoration: underline;
     font-size: 1rem;
   }
 
@@ -310,6 +325,8 @@ footer #button:hover {
 
   /*FOOTER*/
 
+  /*FOOTER*/
+
   footer a {
     font-size: 4vw;
     line-height: 6vw;
@@ -326,6 +343,7 @@ footer #button:hover {
     column-gap: 15%;
     padding-bottom: 5vw;
   }
+
   #newsletter_email {
     font-size: 3.5vw;
     font-family: var(--font-3);
