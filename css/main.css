@@ -171,6 +171,11 @@ ul span {
   h2 {
     font-size: 5vw;
   }
+
+  ul span {
+    font-size: 1.1rem;
+  }
+
   #svgs img {
     width: 100%;
     display: block;

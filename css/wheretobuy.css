@@ -65,3 +65,18 @@
     font-size: 1.4vw;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .main {
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+  }
+
+  .text {
+    margin-left: 10vw;
+  }
+
+  .text2 {
+    margin-left: 10vw;
+  }
+}
