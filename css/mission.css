@@ -91,3 +91,118 @@ main h1 {
   gap: 1vw;
   font-size: 0.8rem;
 }
+
+.reasons {
+  background-color: #f5f5f5;
+  font-family: var(--font-3);
+}
+
+.reasons h3 {
+  font-weight: 300;
+  margin-left: 10vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+}
+.reasons ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0vw 5vw 10vw;
+  margin: 0;
+  gap: 1vw;
+  font-size: 1rem;
+  width: 60vw;
+}
+
+.reasons li {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.reasons img {
+  height: 25px;
+  padding-right: 20px;
+}
+
+.benefits h3 {
+  font-weight: 300;
+  margin-left: 10vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  font-family: var(--font-3);
+  text-transform: uppercase;
+}
+
+.sides {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  margin-left: 12vw;
+}
+
+.left-side img {
+  height: 150px;
+  width: 150px;
+  margin-left: -2vw;
+  margin-top: 3vw;
+}
+
+.left-side ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 1vw;
+  font-size: 1.2rem;
+  width: 20vw;
+}
+
+.left-side h4 {
+  color: var(--color-2);
+  font-family: var(--font-3);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.left-side h5 {
+  color: var(--color-3);
+  font-family: var(--font-3);
+  font-size: 1.2rem;
+  margin-top: 3vw;
+}
+
+.right-side h5 {
+  color: var(--color-3);
+  font-family: var(--font-3);
+  font-size: 1.2rem;
+  margin-top: 3vw;
+}
+
+.right-side p {
+  font-size: 1.2rem;
+  margin-top: 1vw;
+  width: 53vw;
+}
+
+.second {
+  margin-left: 12vw;
+  margin-top: 10vw;
+}
+
+.center {
+  margin-left: -1vw;
+}
+
+.third {
+  margin-top: 10vw;
+}
+
+.third img {
+  margin-left: 0px;
+}
+
+.list li {
+  font-size: 1rem;
+}
