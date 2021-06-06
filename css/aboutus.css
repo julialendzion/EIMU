@@ -86,9 +86,13 @@ section h2 {
   font-size: 1.2rem;
 }
 
-.person img {
+.img_container {
   height: 150px;
   width: 150px;
+}
+
+.img_container img {
+  max-width: 100%;
 }
 
 h3 {
@@ -120,5 +124,19 @@ h3 {
   .desc {
     width: 90%;
     margin-left: 5vw;
+  }
+
+  .picrow {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vw;
+  }
+
+  .img_container {
+    margin-left: 32vw;
+    height: 150px;
+    width: 150px;
   }
 }

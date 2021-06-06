@@ -197,3 +197,97 @@
     color: var(--color-3);
   }
 }
+
+@media screen and (max-width: 700px) {
+  #arrow {
+    display: none;
+  }
+
+  #arrow2 {
+    display: none;
+  }
+
+  #info {
+    padding: 0vw 10vw;
+  }
+
+  #info h1 {
+    font-size: 2rem;
+  }
+
+  #info h2 {
+    font-size: 1.5rem;
+  }
+  #info h3 {
+    font-size: 1.5rem;
+  }
+  #info p {
+    font-size: 1.5rem;
+  }
+
+  .clickingArea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.8vw;
+  }
+
+  #comments {
+    margin-top: 30vw;
+    margin-left: 10vw;
+  }
+
+  #comment p,
+  #comment span,
+  #comment h3 {
+    font-size: 1.5rem;
+  }
+
+  main form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    gap: 5vw;
+    padding: 0vw;
+    margin-top: 5vw;
+  }
+
+  #comments input,
+  textarea {
+    padding: 1.5vw;
+  }
+
+  #cooking {
+    padding: 10vw;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 10%;
+    font-size: 1.5rem;
+  }
+
+  #cooking a {
+    font-size: 1.2rem;
+  }
+
+  #ListOfDrinks {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30vw;
+    margin-top: 30vw;
+  }
+
+  #ListOfDrinks img {
+    margin-left: 5vw;
+    width: 60%;
+  }
+
+  #ListOfDrinks h2 {
+    font-size: 2rem;
+    color: var(--color-2);
+  }
+
+  #ListOfDrinks h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
