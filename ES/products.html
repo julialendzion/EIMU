@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/products.css" />
+    <title>Document</title>
+
     <link rel="stylesheet" href="../css/forall.css" />
+    <link rel="stylesheet" href="../css/products.css" />
   </head>
   <body>
     <header>
@@ -26,21 +25,31 @@
         </div>
         <div id="div2">
           <a href="wheretobuy.html"> <button>Kust leida?</button></a>
-          <a href="ES/index.html" id="language">EE/ENG</a>
+          <a href="../index.html#main" id="language">EE/ENG</a>
         </div>
       </nav>
-      <h1></h1>
     </header>
     <main>
+      <section>
+        <div id="breadcrumbs">
+          <a href="index.html">avaleht</a>
+          <span>&#8287;﹥&#8287;</span>
+          <a href="index.html#main">missioon</a>
+          <span>&#8287;﹥&#8287;</span>
+          <a id="nazwa" href="products.html"></a>
+        </div>
+      </section>
       <section id="produkt">
         <section>
-          <img id="arrow" src="../img/arrow.svg" />
+          <a id="arrow2click" href="products.html?id=60afe9136a5d621100000f9c"
+            ><img id="arrow" src="../img/arrow.svg"
+          /></a>
         </section>
         <section>
           <img id="img" src="" />
         </section>
         <section id="info">
-          <h1 class="name">Nimi</h1>
+          <h1 class="name"></h1>
           <p class="description"></p>
 
           <div id="detailsSvgs">
@@ -50,28 +59,28 @@
             </div>
             <p id="location" class="hidden">Valmistatud Eestis, Värskas.</p>
 
-            <img class="line" src="../img/line.svg" />
+            <img class="line" src="../img/Artboard 8.svg" />
 
             <div class="clickingArea">
               <h2>Koostisosad</h2>
               <h3 id="clickhere2">+</h3>
             </div>
             <p id="ingredients" class="hidden"></p>
-            <img class="line" src="../img/line.svg" />
+            <img class="line" src="../img/Artboard 8.svg" />
 
             <div class="clickingArea">
               <h2>Allergeenid</h2>
               <h3 id="clickhere3">+</h3>
             </div>
             <p id="allergenes" class="hidden"></p>
-            <img class="line" src="../img/line.svg" />
+            <img class="line" src="../img/Artboard 8.svg" />
 
             <div class="clickingArea">
               <h2>Toiteväärtus</h2>
               <h3 id="clickhere4">+</h3>
             </div>
-            <p id="nutrition" class="hidden"></p>
-            <img class="line" src="../img/line.svg" />
+            <img id="nutrition" src="../img/nutritional.svg" class="hidden" />
+            <img class="line" src="../img/Artboard 8.svg" />
           </div>
         </section>
         <section>
@@ -82,25 +91,34 @@
       </section>
 
       <section id="Comments">
-        <h2>Vaata, mida meie kliendid meie kohta ütlevad!</h2>
-        <template class="comments">
-          <div id="comment">
-            <p>by <span></span></p>
-            <h3></h3>
-          </div>
-        </template>
-        <section id="commentDisplay"></section>
-
+        <div>
+          <h2>Reviews from our customers</h2>
+          <template class="comments">
+            <div id="comment">
+              <p>by <span></span></p>
+              <h3></h3>
+            </div>
+          </template>
+          <section id="commentDisplay"></section>
+        </div>
         <form id="commentForm">
-          <label for="comment_name">Name</label>
-          <input type="text" name="name" required id="comment_name" />
+          <p class="hidden" id="thankYou">
+            Thank you! We will post your comment shortly.
+          </p>
+          <input
+            type="text"
+            name="name"
+            required
+            id="comment_name"
+            placeholder="Your name..."
+          />
 
-          <label for="comment_content">Comment</label>
           <textarea
             name="content"
             required
             id="comment_content"
             required
+            placeholder="Type your comment here..."
           ></textarea>
           <input id="button" type="submit" value="Add a comment" />
         </form>
@@ -114,6 +132,7 @@
             palju enamat! Need sobivad ideaalselt toidu valmistamiseks ja
             küpsetamiseks. Leia oma lemmik retsept!
           </p>
+
           <a href="recipes.html">Loe lähemalt</a>
         </div>
         <img src="../img/ladydrinkingmilk.png" />
@@ -125,13 +144,8 @@
         <section id="drinks"></section>
         <template id="template">
           <article>
-            <a href=""
-              ><img
-                id="img"
-                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Totebag.jpg"
-                alt=""
-            /></a>
-            <h3>NAME</h3>
+            <a href=""><img id="img" src="" alt="" /></a>
+            <h3></h3>
           </article>
         </template>
       </section>
