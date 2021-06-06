@@ -26,6 +26,7 @@ fetch(
 
 function showPost(data) {
   console.log(data);
+  document.querySelector("#nazwa").textContent = data.name;
   document.querySelector("#img").src = data.image;
   document.querySelector(".name").textContent = data.name + data.ml;
   document.querySelector(".name").style.color = data.color;
@@ -103,6 +104,7 @@ function handleSubmit(e) {
 
       form.elements.name.value = "";
       form.elements.content.value = "";
+      document.querySelector("#thankYou").classList.remove("hidden");
     });
 }
 function LocationOpen() {

@@ -157,7 +157,7 @@
   }
 
   /*COMMENT STYLING*/
-  form {
+  main form {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -187,5 +187,13 @@
   }
   #comments h2 {
     font-size: 2.5vw;
+  }
+
+  #thankYou {
+    font-family: var(--font-3);
+    font-size: 1.2vw;
+    width: 40vw;
+    margin-left: -1vw;
+    color: var(--color-3);
   }
 }
