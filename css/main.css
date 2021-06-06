@@ -19,6 +19,24 @@ header h1 {
   margin-left: 60%;
   margin-top: 29%;
 }
+
+header h1 {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 60%;
+  }
+}
+
 h2 {
   color: var(--color-2);
   text-align: center;
