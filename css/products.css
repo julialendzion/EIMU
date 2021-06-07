@@ -59,6 +59,10 @@
     font-size: 1.2vw;
     font-weight: 400;
   }
+  #info h2:hover {
+    cursor: pointer;
+  }
+
   #info h3 {
     color: var(--color-1);
     font-size: 1.2vw;

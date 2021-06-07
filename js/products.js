@@ -1,29 +1,35 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const url = `https://kea21-6a0c.restdb.io/rest/eimu-products/` + id;
-const mediaurl = "https://kea21-6a0c.restdb.io/media/";
-
 //API key
 //The API key
-const options = {
-  headers: {
-    "x-apikey": "60339bce5ad3610fb5bb64e6",
-  },
-};
 
-// fetching data
-fetch(url, options)
+fetch(
+  "https://kea21-6a0c.restdb.io/rest/eimu-products/" +
+    id +
+    "?fetchchildren=true",
+
+  {
+    method: "GET",
+    headers: {
+      "x-apikey": "60339bce5ad3610fb5bb64e6",
+    },
+  }
+)
   .then((res) => res.json())
-  .then((data) => showProduct(data));
+  .then((response) => {
+    showPost(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
-//changing the content- name, brand, image
-function showProduct(data) {
+function showPost(data) {
   console.log(data);
+  document.querySelector("#nazwa").textContent = data.name;
   document.querySelector("#img").src = data.image;
   document.querySelector(".name").textContent = data.name + data.ml;
   document.querySelector(".name").style.color = data.color;
-
   document.querySelector(".description").textContent = data.description;
   document.querySelector("#produkt").style.backgroundImage =
     `url(` + data.background + `)`;
@@ -36,54 +42,163 @@ function showProduct(data) {
     LocationOpen();
   };
 
-  document.querySelector("#clickhere2").onclick = () => {
-    IngredientsOpen();
-  };
-  document.querySelector("#clickhere3").onclick = () => {
-    AllergenesOpen();
-  };
-  document.querySelector("#clickhere4").onclick = () => {
-    NutritionOpen();
+  document.querySelector("#tutaj").onclick = () => {
+    LocationOpen();
+
+    document.querySelector("#clickhere2").onclick = () => {
+      IngredientsOpen();
+    };
+    document.querySelector("#tutaj2").onclick = () => {
+      IngredientsOpen();
+    };
+    document.querySelector("#clickhere3").onclick = () => {
+      AllergenesOpen();
+    };
+    document.querySelector("#tutaj3").onclick = () => {
+      AllergenesOpen();
+    };
+
+    document.querySelector("#clickhere4").onclick = () => {
+      NutritionOpen();
+    };
+    document.querySelector("#tutaj4").onclick = () => {
+      NutritionOpen();
+    };
   };
 
-  //document.querySelector("#arrow").onclick = () => {
-  // changeProduct();
-  //  };
+  //grab the template
+  const template = document.querySelector("template.comments").content;
+
+  data.comments.forEach((comment) => {
+    //clone
+    const copy = template.cloneNode(true);
+
+    //adjust stuff
+    copy.querySelector("h3").textContent = comment.content;
+    copy.querySelector("p span").textContent = comment.name;
+    //apend it
+    document.querySelector("#commentDisplay").appendChild(copy);
+  });
+  if (data.comments.length == 0) {
+    const copy = template.cloneNode(true);
+
+    copy.querySelector("h3").textContent = "No comments yet, be the first!";
+    copy.querySelector("p span").textContent = "-";
+
+    document.querySelector("#commentDisplay").appendChild(copy);
+  }
 }
 
-/*function changeProduct() {
-  console.log("its working");
-  const url = `https://kea21-6a0c.restdb.io/rest/eimu-products/60afe9976a5d621100000fbc`;
+const form = document.querySelector("#commentForm");
 
-  fetch(url, options)
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const payload = {
+    name: form.elements.name.value,
+    content: form.elements.content.value,
+  };
+  console.log(payload);
+
+  fetch(`https://kea21-6a0c.restdb.io/rest/eimu-products/${id}/comments`, {
+    method: "POST",
+    headers: {
+      "x-apikey": "60339bce5ad3610fb5bb64e6",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
     .then((res) => res.json())
-    .then((data) => showProduct(data));
+    .then((data) => {
+      const template = document.querySelector("template.comments").content;
+      const copy = template.cloneNode(true);
+      copy.querySelector("h3").textContent = comment.content;
+      copy.querySelector("p span").textContent = comment.name;
 
-  //changing the content- name, brand, image
-  function showProduct(data) {
-    console.log(data);
-    document.querySelector("#img").src = data.image;
-    document.querySelector(".name").textContent = data.name + data.ml;
-    document.querySelector(".description").textContent = data.description;
-    document.querySelector("main").style.backgroundImage =
-      `url(` + data.background + `)`;
-  }
-}*/
+      document.querySelector("#commentDisplay").appendChild(copy);
 
+      form.elements.name.value = "";
+      form.elements.content.value = "";
+    });
+}
 function LocationOpen() {
   document.querySelector("#location").classList.toggle("hidden");
+  var x = document.getElementById("clickhere");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function IngredientsOpen() {
   document.querySelector("#ingredients").classList.toggle("hidden");
+  var x = document.getElementById("clickhere2");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function AllergenesOpen() {
   document.querySelector("#allergenes").classList.toggle("hidden");
+  var x = document.getElementById("clickhere3");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
 function NutritionOpen() {
+  console.log("it works");
   document.querySelector("#nutrition").classList.toggle("hidden");
+  var x = document.getElementById("clickhere4");
+  if (x.innerHTML === "+") {
+    x.innerHTML = "−";
+  } else {
+    x.innerHTML = "+";
+  }
 }
 
-const template = document.querySelector("template.comments").content;
+const url = "https://kea21-6a0c.restdb.io/rest/eimu-products";
+
+//560263607f98025500000000?s=t
+//The API key
+const options = {
+  headers: {
+    "x-apikey": "60339bce5ad3610fb5bb64e6",
+  },
+};
+fetch(url, options)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    showData(data);
+  });
+
+function showData(data) {
+  console.log("data", data);
+  data.forEach(product);
+}
+
+function product(data) {
+  //grab the template
+
+  const template = document.querySelector("#template").content;
+  //clone
+  const copy = template.cloneNode(true);
+
+  //adjust stuff
+  copy.querySelector("h3").textContent = data.name;
+  copy.querySelector("#img").src = data.image;
+  copy.querySelector("a").href = `products.html?id=${data._id}`;
+  //copy.querySelector("article img").alt = data.productdisplayname;
+  // copy.querySelector("h3 span").textContent = post.username;
+  // copy.querySelector("a.readmore").href = `article.html?article=${post._id}`;
+  //apend it
+  document.querySelector("#drinks").appendChild(copy);
+}

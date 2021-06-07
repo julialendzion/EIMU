@@ -37,40 +37,55 @@ function showPost(data) {
   document.querySelector("#location").textContent = data.production;
   document.querySelector("#ingredients").textContent = data.ingredients;
   document.querySelector("#allergenes").textContent = data.allergens;
+
   document.querySelector("#clickhere").onclick = () => {
     LocationOpen();
-    document.querySelector("#clickhere2").onclick = () => {
-      IngredientsOpen();
-    };
-    document.querySelector("#clickhere3").onclick = () => {
-      AllergenesOpen();
-    };
-    document.querySelector("#clickhere4").onclick = () => {
-      NutritionOpen();
-    };
   };
 
-  //grab the template
-  const template = document.querySelector("template.comments").content;
+  document.querySelector("#tutaj").onclick = () => {
+    LocationOpen();
+  };
 
-  data.comments.forEach((comment) => {
-    //clone
-    const copy = template.cloneNode(true);
+  document.querySelector("#clickhere2").onclick = () => {
+    IngredientsOpen();
+  };
+  document.querySelector("#tutaj2").onclick = () => {
+    IngredientsOpen();
+  };
+  document.querySelector("#clickhere3").onclick = () => {
+    AllergenesOpen();
+  };
+  document.querySelector("#tutaj3").onclick = () => {
+    AllergenesOpen();
+  };
+  document.querySelector("#clickhere4").onclick = () => {
+    NutritionOpen();
+  };
+  document.querySelector("#tutaj4").onclick = () => {
+    NutritionOpen();
+  };
+}
 
-    //adjust stuff
-    copy.querySelector("h3").textContent = comment.content;
-    copy.querySelector("p span").textContent = comment.name;
-    //apend it
-    document.querySelector("#commentDisplay").appendChild(copy);
-  });
-  if (data.comments.length == 0) {
-    const copy = template.cloneNode(true);
+//grab the template
+const template = document.querySelector("template.comments").content;
 
-    copy.querySelector("h3").textContent = "No comments yet, be the first!";
-    copy.querySelector("p span").textContent = "-";
+data.comments.forEach((comment) => {
+  //clone
+  const copy = template.cloneNode(true);
 
-    document.querySelector("#commentDisplay").appendChild(copy);
-  }
+  //adjust stuff
+  copy.querySelector("h3").textContent = comment.content;
+  copy.querySelector("p span").textContent = comment.name;
+  //apend it
+  document.querySelector("#commentDisplay").appendChild(copy);
+});
+if (data.comments.length == 0) {
+  const copy = template.cloneNode(true);
+
+  copy.querySelector("h3").textContent = "No comments yet, be the first!";
+  copy.querySelector("p span").textContent = "-";
+
+  document.querySelector("#commentDisplay").appendChild(copy);
 }
 
 const form = document.querySelector("#commentForm");

@@ -1,11 +1,11 @@
-const form = document.querySelector("#NewsletterForm");
+const news = document.querySelector("#NewsletterForm");
 
-form.addEventListener("submit", handleSubmit);
+news.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
   e.preventDefault();
   const payload = {
-    email: form.elements.email.value,
+    email: news.elements.email.value,
   };
   console.log(payload);
 
@@ -19,7 +19,7 @@ function handleSubmit(e) {
   })
     .then((res) => res.json())
     .then((data) => {
-      form.elements.email.value = "";
+      news.elements.email.value = "";
       document.querySelector("#confirmation").classList.remove("hidden");
     });
 }

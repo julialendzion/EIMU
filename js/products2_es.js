@@ -37,15 +37,31 @@ function showPost(data) {
   document.querySelector("#location").textContent = data.production;
   document.querySelector("#ingredients").textContent = data.ingredients;
   document.querySelector("#allergenes").textContent = data.allergens;
+
   document.querySelector("#clickhere").onclick = () => {
     LocationOpen();
+  };
+
+  document.querySelector("#tutaj").onclick = () => {
+    LocationOpen();
+
     document.querySelector("#clickhere2").onclick = () => {
+      IngredientsOpen();
+    };
+    document.querySelector("#tutaj2").onclick = () => {
       IngredientsOpen();
     };
     document.querySelector("#clickhere3").onclick = () => {
       AllergenesOpen();
     };
+    document.querySelector("#tutaj3").onclick = () => {
+      AllergenesOpen();
+    };
+
     document.querySelector("#clickhere4").onclick = () => {
+      NutritionOpen();
+    };
+    document.querySelector("#tutaj4").onclick = () => {
       NutritionOpen();
     };
   };
@@ -140,6 +156,7 @@ function AllergenesOpen() {
 }
 
 function NutritionOpen() {
+  console.log("it works");
   document.querySelector("#nutrition").classList.toggle("hidden");
   var x = document.getElementById("clickhere4");
   if (x.innerHTML === "+") {
