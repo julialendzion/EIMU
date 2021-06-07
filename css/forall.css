@@ -319,10 +319,11 @@ footer #button:hover {
   a {
     font-size: 5vw;
   }
+  /*this thing belowe aplies to menu */
   ul {
     padding-top: 2vw;
     width: 90vw;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 5vw;
   }
 
