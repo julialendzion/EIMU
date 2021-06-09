@@ -123,6 +123,7 @@ function handleSubmit(e) {
 
       form.elements.name.value = "";
       form.elements.content.value = "";
+      document.querySelector("#thankYou").classList.remove("hidden");
     });
 }
 function LocationOpen() {
