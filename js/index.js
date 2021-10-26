@@ -4,7 +4,7 @@ const url = "https://kea21-6a0c.restdb.io/rest/eimu-products";
 //The API key
 const options = {
   headers: {
-    "x-apikey": "60339bce5ad3610fb5bb64e6",
+    "x-apikey": "6176a6518597142da1745a51",
   },
 };
 fetch(url, options)

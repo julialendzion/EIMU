@@ -5,12 +5,14 @@ const id = urlParams.get("id");
 //The API key
 
 fetch(
-  "https://kea21-6a0c.restdb.io/rest/eimu-products-estonian/" + id + "?fetchchildren=true",
+  "https://kea21-6a0c.restdb.io/rest/eimu-products/" +
+    id +
+    "?fetchchildren=true",
 
   {
     method: "GET",
     headers: {
-      "x-apikey": "6176a6518597142da1745a51",
+      "x-apikey": "60339bce5ad3610fb5bb64e6",
     },
   }
 )
@@ -29,7 +31,8 @@ function showPost(data) {
   document.querySelector(".name").textContent = data.name + data.ml;
   document.querySelector(".name").style.color = data.color;
   document.querySelector(".description").textContent = data.description;
-  document.querySelector("#produkt").style.backgroundImage = `url(` + data.background + `)`;
+  document.querySelector("#produkt").style.backgroundImage =
+    `url(` + data.background + `)`;
 
   document.querySelector("#location").textContent = data.production;
   document.querySelector("#ingredients").textContent = data.ingredients;
@@ -98,7 +101,7 @@ function handleSubmit(e) {
   };
   console.log(payload);
 
-  fetch(`https://kea21-6a0c.restdb.io/rest/eimu-products-estonian/${id}/comments`, {
+  fetch(`https://kea21-6a0c.restdb.io/rest/eimu-products/${id}/comments`, {
     method: "POST",
     headers: {
       "x-apikey": "60339bce5ad3610fb5bb64e6",
@@ -161,7 +164,7 @@ function NutritionOpen() {
   }
 }
 
-const url = "https://kea21-6a0c.restdb.io/rest/eimu-products-estonian";
+const url = "https://kea21-6a0c.restdb.io/rest/eimu-products";
 
 //560263607f98025500000000?s=t
 //The API key
